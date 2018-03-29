@@ -1,0 +1,34 @@
+
+	input{
+		float: center;
+	}
+
+	input[type="text"],[type="submit"],[type="password"],[type="button"]{
+		font-size: 20px;
+		font-family: 'NanumGothic';
+		margin-bottom: 20px;
+		width: 26%;
+		height: 60px;
+	}
+
+	input[type="submit"],input[type="button"]{
+		color: white;
+		height: 70px;
+		width: 26%;
+		background-color: rgb(210,30,15);
+	}
+
+	input[type="button"]{
+		background-color: rgb(89,89,89);
+		font-family: 'NanumGothic';
+		margin-top: -1%;
+	}
+
+	a:link{
+		text-decoration: none;
+		color: white;
+	}
+
+	a:visited{
+		color: white;
+	}

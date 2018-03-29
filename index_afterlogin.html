@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<head>
+
+<title>중앙극장에 오신 것을 환영합니다.</title>
+
+<link rel="stylesheet" href="css/all.css" type="text/css">
+
+<script>
+//change image
+	var ch=1;
+
+	function change(){
+		ch=ch+1;
+
+		if(ch%2==1){
+			img1.src="img/다음상영작.png";
+		}
+		else if(ch%2==0){
+			img1.src="img/다음상영작2.png";
+		}
+	}
+
+</script>
+
+
+</head>
+
+<body>
+
+	<div class="header">
+		<a href="./index_afterlogin.html"><img class="title" src="img/titlepic.png"></a>
+	</div>
+
+	<div class="nav">
+		<a href="./mypage.jsp"><img class="link" src="img/마이페이지.png"></a>
+		<a href="./movie_afterlogin.jsp"><img class="link" src="img/둘러보시게.png"></a>
+		<a href="./reserve_afterlogin.jsp"><img class="link" src="img/예매하시게.png"></a>
+	</div>
+
+	<div class="content" style="height: 60vh;">
+		<a href="./reserve_afterlogin.jsp"><img class="movie1" src="img/현재상영중.png"></a>
+		<a href="./movie_afterlogin.jsp"><img class="movie2" src="img/다음상영작.png" id="img1" ></a>
+		<img class="button" src="img/다음.png" onclick="change()">
+	</div>
+</body>
+</html>

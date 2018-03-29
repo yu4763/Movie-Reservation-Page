@@ -1,0 +1,44 @@
+CREATE DATABASE IF NOT EXISTS member_list;
+
+USE member_list;
+
+DROP TABLE IF EXISTS MEMBER;
+DROP TABLE IF EXISTS MOVIE;
+DROP TABLE IF EXISTS RESERVED;
+
+CREATE TABLE MEMBER(
+	uname VARCHAR(50),
+	uid	VARCHAR(50),
+    upwd VARCHAR(50),
+    uphone VARCHAR(20),
+    ureserve int,
+    PRIMARY KEY(uid)
+) DEFAULT CHARACTER SET = 'utf8';
+
+CREATE TABLE MOVIE(
+	title VARCHAR(50),
+    start_time VARCHAR(30),
+    end_time VARCHAR(30),
+    img_src VARCHAR(50),
+    Auditorium VARCHAR(5),
+    seat int
+) DEFAULT CHARACTER SET = 'utf8';
+
+CREATE TABLE RESERVED(
+	movie VARCHAR(50),
+	start_time VARCHAR(30),
+	seat_no VARCHAR(10),
+    member_id VARCHAR(50)
+)DEFAULT CHARACTER SET = 'utf8';
+
+
+INSERT INTO MEMBER VALUES('hanna', 'yu47632', 'hihi', '010-7125-4763', 0);
+INSERT INTO MEMBER VALUES('한나', 'test', 'test', '010-7125-4763', 0);
+
+INSERT INTO MOVIE VALUES('허삼관', '08:00', '10:00', 'img/허삼관.png', 'S', 192);
+INSERT INTO MOVIE VALUES('사랑과 야망', '10:30', '11:30', 'img/사랑과야망.png', '3', 192);
+
+
+SELECT * FROM MEMBER;
+SELECT * FROM MOVIE;
+SELECT * FROM RESERVED;

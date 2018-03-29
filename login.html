@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<head>
+
+<title>어서오시게 login</title>
+<link rel="stylesheet" href="css/all.css" type="text/css">
+<link rel="stylesheet" href="css/login.css" type="text/css">
+
+</head>
+
+<body>
+
+	<div class="header">
+		<a href="./index.html"><img class="title" src="img/titlepic.png"></a>
+	</div>
+
+	<div class="nav">
+		<a href="./login.html"><img class="link" src="img/어서오시게.png"></a>
+		<a href="./movie.jsp"><img class="link" src="img/둘러보시게.png"></a>
+		<a href="./reserve.jsp"><img class="link" src="img/예매하시게.png"></a>
+	</div>
+
+	<form action="login.jsp" method="post">
+		<p align="center">
+		<br>
+
+		<input id="username" type="text" name="userID" placeholder="아이디" autocomplete="off" required
+		oninvalid="this.setCustomValidity('아이디를 입력하세요')"
+		oninput="setCustomValidity('')" ></input><br>
+
+		<input id="password" type="password" name="userPW" placeholder="비밀번호" autocomplete="off" required
+		oninvalid="this.setCustomValidity('비밀번호를 입력하세요')"
+		oninput="setCustomValidity('')"></input><br>
+
+		<input id="loginbutton" type="submit" value="로그인"></input>
+
+		<br>
+		<input id="signupbutton" type="button" value="회원가입" onClick="location.href='signup.html';"></input>
+		</p>
+	</form>
+
+</body>
+</html>

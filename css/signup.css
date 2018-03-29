@@ -1,0 +1,38 @@
+
+	form{
+		margin-left: 22%;
+	}
+
+	input{
+		margin-bottom: 1%;
+
+	}
+
+	p, textarea,button,input[type="checkbox"]{
+		align: left;
+		margin-left: 5%;
+
+	}
+	p{
+		margin-top: 5%;
+
+	}
+
+	fieldset{
+		border: 1px solid;
+		padding: 20px;
+		margin-left: 5%;
+	}
+
+	fieldset[name="addmovie"], fieldset[name="deletemovie"]{
+		padding: 30px;
+		margin-left: 25%;
+		margin-right: 25%;
+	}
+	fieldset[name="private"], fieldset[name="phone"]{
+		margin-right: 35%;
+	}
+
+	button[name="adminbutton"], button[name="logout"]{
+		margin-left: 1%;
+	}
